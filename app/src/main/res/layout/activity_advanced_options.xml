@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_gradient"
+    tools:context=".AdvancedOptionsActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/adv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Sleep Now"
+        android:textColor="#E9ECFB"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/adv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Advanced filters"
+        android:textColor="#E9ECFB"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <RadioGroup
+        android:id="@+id/adv_radGroup1"
+        android:layout_width="246dp"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adv_t1">
+
+        <RadioButton
+            android:id="@+id/adv_radioButton1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Low"
+            android:textColor="@color/off_white" />
+
+        <RadioButton
+            android:id="@+id/adv_radioButton2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Moderate"
+            android:textColor="@color/off_white" />
+
+        <RadioButton
+            android:id="@+id/adv_radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="High"
+            android:textColor="@color/off_white" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/adv_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Level of physical activity today:"
+        android:textColor="@color/off_white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <RadioGroup
+        android:id="@+id/adv_radGroup2"
+        android:layout_width="246dp"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adv_t2"
+        app:layout_constraintVertical_bias="0.021">
+
+        <RadioButton
+            android:id="@+id/adv_stress_radioButton1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Low"
+            android:textColor="@color/off_white" />
+
+        <RadioButton
+            android:id="@+id/adv_stress_radioButton2"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:text="Moderate"
+            android:textColor="@color/off_white" />
+
+        <RadioButton
+            android:id="@+id/adv_stress_radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="High"
+            android:textColor="@color/off_white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/adv_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Level of stress experienced today:"
+        android:textColor="@color/off_white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:id="@+id/adv_coffe"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Had any coffe close to bed time?\n(6 or less hours before)"
+        android:textColor="@color/off_white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/adv_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adv_devices"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="204dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Did you use any screens close to\nbed time?"
+        android:textColor="@color/off_white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/adv_checkBoxDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="204dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/off_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/adv_devices"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/adv_devices"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/adv_checkBoxCoffe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/off_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/adv_coffe"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/adv_coffe"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/adv_calc"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#ff9100"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Calculate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Back"
+        android:textColor="#E8EBFA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adv_calc"
+        app:layout_constraintVertical_bias="0.263" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

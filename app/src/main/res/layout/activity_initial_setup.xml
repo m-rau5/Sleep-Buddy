@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_gradient"
+    tools:context=".InitialSetup">
+
+
+    <TextView
+        android:id="@+id/setup_info"
+        android:layout_width="380dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="107dp"
+        android:fontFamily="@font/montserrat"
+        android:text="To get more accurate results, \nplease tell us about yourself:\n(you can do this later in the settings)"
+        android:textAlignment="center"
+        android:textColor="#E8EBFA"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_welcome" />
+
+
+    <TextView
+        android:id="@+id/setup_brackets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="(you can do this later in the settings)"
+        android:textAlignment="center"
+        android:textColor="#E8EBFA"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_info" />
+
+    <TextView
+        android:id="@+id/setup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="107dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Hello"
+        android:textColor="#E9ECFB"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/setup_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="107dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Welcome to Sleep Buddy!"
+        android:textAlignment="center"
+        android:textColor="#E8EBFA"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_title" />
+
+    <Button
+        android:id="@+id/setup_submit"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="#ff9100"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Submit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/setup_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Skip"
+        android:textColor="#E8EBFA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_submit"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/setup_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/montserrat"
+        android:text="What should I call you?"
+        android:textColor="@color/off_white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_info" />
+
+    <EditText
+        android:id="@+id/setup_enterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#E8EBFA"
+        android:textColorHint="#B0E8EBFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_call" />
+
+    <RadioGroup
+        android:id="@+id/setup_radioGroup"
+        android:layout_width="232dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_enterName">
+
+        <TextView
+            android:id="@+id/setup_radioText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:fontFamily="@font/montserrat"
+            android:text="What age group are you?"
+            android:textAlignment="center"
+            android:textColor="@color/off_white"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="14-18"
+            android:textColor="@color/off_white" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="19-25"
+            android:textColor="@color/off_white" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="25+"
+            android:textColor="@color/off_white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/setup_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Do you often use screens \nbefore going to bed?"
+        android:textColor="@color/off_white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/setup_submit"
+        app:layout_constraintEnd_toStartOf="@+id/setup_checkBox"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_radioGroup"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <CheckBox
+        android:id="@+id/setup_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Yes"
+        android:textColor="@color/off_white"
+        app:layout_constraintBottom_toTopOf="@+id/setup_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_radioGroup"
+        app:layout_constraintVertical_bias="0.26" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

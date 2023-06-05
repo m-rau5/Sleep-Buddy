@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_gradient"
+    tools:context=".SleepDeptActivity">
+
+    <TextView
+        android:id="@+id/debt_time_selpt_sub"
+        android:layout_width="340dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="107dp"
+        android:fontFamily="@font/montserrat"
+        android:text="How many hours did you sleep today?"
+        android:textAlignment="center"
+        android:textColor="#E8EBFA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/debt_sub" />
+
+    <Spinner
+        android:id="@+id/debt_selpt_min"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/debt_time_selpt_sub"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <Spinner
+        android:id="@+id/debt_selpt_hours"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/debt_time_selpt_sub"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+        android:id="@+id/debt_time_desired_sub"
+        android:layout_width="340dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="107dp"
+        android:fontFamily="@font/montserrat"
+        android:text="How many hours do you aim to sleep per night?"
+        android:textAlignment="center"
+        android:textColor="#E8EBFA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/debt_sub" />
+
+    <TextView
+        android:id="@+id/debt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Sleep Debt"
+        android:textColor="#E9ECFB"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <TextView
+        android:id="@+id/debt_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Find how much sleep you need to recover."
+        android:textAlignment="center"
+        android:textColor="#E8EBFA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/debt_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Spinner
+        android:id="@+id/debt_hour_spinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/debt_time_desired_sub"
+        app:layout_constraintVertical_bias="0.048" />
+
+
+    <Spinner
+        android:id="@+id/debt_min_spinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/debt_time_desired_sub"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/debt_calc"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#ff9100"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Calculate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/debt_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+    <TextView
+        android:id="@+id/debt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Back"
+        android:textColor="#E8EBFA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
