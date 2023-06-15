@@ -9,14 +9,14 @@ Written in *Java* using *Android Studio* and *SQLite*
 ## Screenshots
 -Initial user setup and main screen-
 
-<img src="screenshots/2_initial_setup.png?" width="180" height="400" /> <img src="screenshots/3_0_sleep_now_menu.png" width="180" height="400" />
+<img src="screenshots/2_initial_setup.png?" width="210" height="460" /> <img src="screenshots/3_0_sleep_now_menu.png" width="210" height="460" />
 
 -Advanced filters and sleep calculation-
 
 **Times were computer at 12:45 AM*
 
-<img src="screenshots/5_adv_filters.png" width="180" height="400" /> <img src="screenshots/9_adv_filter_result.png" width="180" height="400" /> 
+<img src="screenshots/5_adv_filters.png" width="210" height="460" /> <img src="screenshots/9_adv_filter_result.png" width="210" height="460" /> 
 
 -***NEW:*** Sleep Dept calculator-
 
-<img src="screenshots/7_sleep_dept_setup.png" width="180" height="400" /> <img src="screenshots/8_sleep_dept_status.png" width="180" height="400" /> 
+<img src="screenshots/7_sleep_dept_setup.png" width="210" height="460" /> <img src="screenshots/8_sleep_dept_status.png" width="210" height="460" /> 
